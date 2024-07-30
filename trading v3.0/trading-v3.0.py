@@ -12,7 +12,7 @@ while True:
     sayi = int(input("Kaç Adet Hisse İncelemek İstersiniz? "))
     out = str(f"{zaman.day}-{zaman.month}-{zaman.year},SAAT-{zaman.hour}.{zaman.minute}.{zaman.second},Interval-{Interval.INTERVAL_1_WEEK}")
 
-    # o: rating puanı/ u: Hisse Adı/
+    # o: rating puanı/ u: Hisse Adı/ y: rating yorumu
     def file_func(o, u, y):
         f = open(f"logs/{out}.txt", "a", encoding="utf-8")
         f.write("MAKS PUAN=62\n")
